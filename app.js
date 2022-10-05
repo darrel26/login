@@ -34,6 +34,4 @@ app.use('/auth-endpoint', authentication);
 app.use(errorHandler);
 app.use(unknownEndpoint);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
-});
+module.exports = app;
